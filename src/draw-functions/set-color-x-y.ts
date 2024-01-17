@@ -20,12 +20,12 @@ function assertCondition(condition: boolean, message: string): boolean {
 
 export const setColorXY = ({ x, y, r, g, b }: SetColorXYProps) => {
   const c1 = assertCondition(
-    x >= 0 && x <= MAX_X,
-    `x must be in range 0 <= x <= 512, value: ${x}`,
+    x >= 0 && x < MAX_X,
+    `x must be in range 0 <= x < 512, value: ${x}`,
   );
   const c2 = assertCondition(
-    y >= 0 && y <= MAX_Y,
-    `y must be in range 0 <= y <= 512, value: ${y}`,
+    y >= 0 && y < MAX_Y,
+    `y must be in range 0 <= y < 512, value: ${y}`,
   );
   const c3 = assertCondition(
     r >= 0 && r <= 255,

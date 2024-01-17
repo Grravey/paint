@@ -16,7 +16,6 @@ export const bucketHandler = ({
     console.log('Paint bucket color matches fill color');
     return [];
   }
-  console.log('paint bucked start');
 
   while (bucketQueue.length > 0) {
     const { x: nextX, y: nextY } = bucketQueue.shift();
@@ -70,8 +69,6 @@ export const bucketHandler = ({
       colorMap[nextY + 1][nextX + 1] = FILL_COLOR;
     }
   }
-
-  console.log('paint bucket done!');
 
   return [];
 };

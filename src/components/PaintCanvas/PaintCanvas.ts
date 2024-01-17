@@ -95,7 +95,9 @@ export class PaintCanvas extends HTMLElement {
                   width: 1024px;
                 }
                 
-                #main-canvas {}
+                #main-canvas {
+                  background-color: white;
+                }
                 
                 </style>
                 <div id="canvas-container">

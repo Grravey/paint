@@ -48,7 +48,5 @@ export const interpolatePoints = ({
     interpolationPoints.push(nextPoint);
   }
 
-  console.log('interpolationPoints.length: ', interpolationPoints.length);
-
   return interpolationPoints;
 };

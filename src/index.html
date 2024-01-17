@@ -1,0 +1,32 @@
+<html>
+  <div id="app-container">
+    <page-header></page-header>
+    <!-- <progress-bar id="progress-bar" percentage="30" style="display: flex; width: 250px; height: 25px"></progress-bar> -->
+    <!-- <script > 
+        setInterval(() => {
+            const progressBar = document.getElementById('progress-bar');
+            const percentage = progressBar.getAttribute('percentage');
+            progressBar.setAttribute('percentage', parseInt(percentage) + 5)
+        }, 500);
+    </script> -->
+    <div id="main-horizontal">
+      <tool-sidebar></tool-sidebar>
+      <paint-canvas></paint-canvas>
+      <!-- <layer-sidebar></layer-sidebar> -->
+    </div>
+    <bottom-bar></bottom-bar>
+  </div>
+  <style>
+    #app-container {
+      height: 700px;
+      width: fit-content;
+    }
+
+    #main-horizontal {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</html>

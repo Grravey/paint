@@ -10,11 +10,6 @@ export const padPoint = ({ x, y }: Point, size: number): Point[] => {
   const sqrt = Math.sqrt(size);
   const halfDistance = Math.floor(sqrt / 2);
 
-  // return [
-  //   { x: x - halfDistance, y: y - halfDistance },
-  //   { x: x + halfDistance, y: y + halfDistance },
-  // ];
-  // console.log('half distance: ', halfDistance);
   for (let i = 0; i < halfDistance; i++) {
     for (let j = 0; j < halfDistance; j++) {
       // Top left

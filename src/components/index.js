@@ -1,4 +1,3 @@
-import './LayerSidebar';
 import './PageHeader';
 import './PaintCanvas';
 import './ProgressBar';

@@ -6,6 +6,7 @@ import {
 
 import { EventName, Tool } from '../../enums/index';
 import { uiEventHandler } from '../../events/event-handler';
+import { TOOL_CURSOR_MAP } from './tool-cursor-mapper';
 import { toolHandler } from './tool-handler/index';
 
 export class PaintCanvas extends HTMLElement {
@@ -27,6 +28,12 @@ export class PaintCanvas extends HTMLElement {
 
   handleToolUpdated(updatedTool: Tool) {
     this.selectedTool = updatedTool;
+    const canvas = <HTMLCanvasElement>(
+      this.shadowRoot.getElementById('main-canvas')
+    );
+
+    const { fileName, offsetX, offsetY } = TOOL_CURSOR_MAP[this.selectedTool];
+    canvas.style.cursor = `url(assets/${fileName}) ${offsetX} ${offsetY}, auto`;
   }
 
   handleMouseClick(event: MouseEvent) {
@@ -97,6 +104,7 @@ export class PaintCanvas extends HTMLElement {
                 
                 #main-canvas {
                   background-color: white;
+                  cursor: url('assets/precise.png') 16 16, auto;
                 }
                 
                 </style>

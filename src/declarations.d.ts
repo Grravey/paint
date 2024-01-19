@@ -11,11 +11,21 @@ declare type ToolUpdateData = {
 };
 
 declare enum Tool {
-  BUCKET = 'Bucket',
+  BENDY_LINE = 'BendyLine',
   BRUSH = 'Brush',
-  LINE = 'Line',
+  BUCKET = 'Bucket',
+  CIRCLE = 'Circle',
+  COLOR_PICKER = 'ColorPicker',
   ERASER = 'Eraser',
+  LINE = 'Line',
+  MAGNIFYING_GLASS = 'MagnifyingGlass',
+  MULTI_LINE = 'MultiLine',
+  OVAL = 'Oval',
   PENCIL = 'Pencil',
+  RECTANGLE = 'Rectangle',
+  SELECT_LASSO = 'SelectLasso',
+  SELECT_RECTANGLE = 'SelectRectangle',
+  SPRAY_CAN = 'SprayCan',
   TEXT = 'Text',
 }
 

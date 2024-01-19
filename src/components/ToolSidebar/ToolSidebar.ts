@@ -26,12 +26,22 @@ export class ToolSidebar extends HTMLElement {
                 </style>
 
                 <div id="tool-sidebar">
+                  <tool-selector id="eraser" type=${Tool.SELECT_LASSO}></tool-selector>
+                  <tool-selector id="eraser" type=${Tool.SELECT_RECTANGLE}></tool-selector>
                   <tool-selector id="eraser" type=${Tool.ERASER}></tool-selector>
                   <tool-selector id="bucket" type=${Tool.BUCKET}></tool-selector>
+                  <tool-selector id="eraser" type=${Tool.COLOR_PICKER}></tool-selector>
+                  <tool-selector id="eraser" type=${Tool.MAGNIFYING_GLASS}></tool-selector>
                   <tool-selector id="pencil" type=${Tool.PENCIL}></tool-selector>
                   <tool-selector id="brush" type=${Tool.BRUSH}></tool-selector>
-                  <tool-selector id="pencil" type=${Tool.LINE}></tool-selector>
+                  <tool-selector id="brush" type=${Tool.SPRAY_CAN}></tool-selector>
                   <tool-selector id="pencil" type=${Tool.TEXT}></tool-selector>
+                  <tool-selector id="pencil" type=${Tool.LINE}></tool-selector>
+                  <tool-selector id="pencil" type=${Tool.BENDY_LINE}></tool-selector>
+                  <tool-selector id="pencil" type=${Tool.RECTANGLE}></tool-selector>
+                  <tool-selector id="pencil" type=${Tool.MULTI_LINE}></tool-selector>
+                  <tool-selector id="pencil" type=${Tool.CIRCLE}></tool-selector>
+                  <tool-selector id="pencil" type=${Tool.OVAL}></tool-selector>
                 </div>
                 `;
 

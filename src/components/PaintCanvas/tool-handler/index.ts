@@ -24,6 +24,6 @@ export const toolHandler = ({ tool, ...rest }: ToolHandlerProps) => {
       return pencilHandler(rest);
     default:
       console.log('no handler for: ', tool);
-      return [];
+      return pencilHandler(rest);
   }
 };

@@ -1,8 +1,18 @@
 export const ICON_MAP: Record<Tool, number> = {
+  BendyLine: 11,
   Brush: 7,
   Bucket: 3,
+  Circle: 14,
+  ColorPicker: 4,
   Eraser: 2,
   Line: 10,
+  MagnifyingGlass: 5,
+  MultiLine: 13,
+  Oval: 15,
   Pencil: 6,
+  Rectangle: 12,
+  SelectLasso: 0,
+  SelectRectangle: 1,
+  SprayCan: 8,
   Text: 9,
 };
